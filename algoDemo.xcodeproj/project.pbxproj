@@ -14,6 +14,9 @@
 		841E3A7A221D219F008A6545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E3A78221D219F008A6545 /* LaunchScreen.storyboard */; };
 		841E3A7D221D219F008A6545 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E3A7C221D219F008A6545 /* main.m */; };
 		841E3A87221D219F008A6545 /* algoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E3A86221D219F008A6545 /* algoDemoTests.m */; };
+		841E3A97221D23BB008A6545 /* SinglyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E3A94221D23BB008A6545 /* SinglyLinkedList.m */; };
+		841E3A98221D23BB008A6545 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E3A96221D23BB008A6545 /* ListNode.m */; };
+		841E3A9A221D23C2008A6545 /* SinglyLinkedListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E3A99221D23C2008A6545 /* SinglyLinkedListTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		841E3A82221D219F008A6545 /* algoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = algoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841E3A86221D219F008A6545 /* algoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = algoDemoTests.m; sourceTree = "<group>"; };
 		841E3A88221D219F008A6545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841E3A93221D23BB008A6545 /* SinglyLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglyLinkedList.h; sourceTree = "<group>"; };
+		841E3A94221D23BB008A6545 /* SinglyLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglyLinkedList.m; sourceTree = "<group>"; };
+		841E3A95221D23BB008A6545 /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		841E3A96221D23BB008A6545 /* ListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
+		841E3A99221D23C2008A6545 /* SinglyLinkedListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglyLinkedListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,25 @@
 		841E3A6C221D219B008A6545 /* algoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				841E3A92221D2399008A6545 /* linkedList */,
+				841E3A91221D234B008A6545 /* support files */,
+			);
+			path = algoDemo;
+			sourceTree = "<group>";
+		};
+		841E3A85221D219F008A6545 /* algoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				841E3A99221D23C2008A6545 /* SinglyLinkedListTests.m */,
+				841E3A86221D219F008A6545 /* algoDemoTests.m */,
+				841E3A88221D219F008A6545 /* Info.plist */,
+			);
+			path = algoDemoTests;
+			sourceTree = "<group>";
+		};
+		841E3A91221D234B008A6545 /* support files */ = {
+			isa = PBXGroup;
+			children = (
 				841E3A6D221D219B008A6545 /* AppDelegate.h */,
 				841E3A6E221D219B008A6545 /* AppDelegate.m */,
 				841E3A70221D219B008A6545 /* ViewController.h */,
@@ -91,16 +118,18 @@
 				841E3A7B221D219F008A6545 /* Info.plist */,
 				841E3A7C221D219F008A6545 /* main.m */,
 			);
-			path = algoDemo;
+			path = "support files";
 			sourceTree = "<group>";
 		};
-		841E3A85221D219F008A6545 /* algoDemoTests */ = {
+		841E3A92221D2399008A6545 /* linkedList */ = {
 			isa = PBXGroup;
 			children = (
-				841E3A86221D219F008A6545 /* algoDemoTests.m */,
-				841E3A88221D219F008A6545 /* Info.plist */,
+				841E3A95221D23BB008A6545 /* ListNode.h */,
+				841E3A96221D23BB008A6545 /* ListNode.m */,
+				841E3A93221D23BB008A6545 /* SinglyLinkedList.h */,
+				841E3A94221D23BB008A6545 /* SinglyLinkedList.m */,
 			);
-			path = algoDemoTests;
+			path = linkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +234,8 @@
 			files = (
 				841E3A72221D219B008A6545 /* ViewController.m in Sources */,
 				841E3A7D221D219F008A6545 /* main.m in Sources */,
+				841E3A97221D23BB008A6545 /* SinglyLinkedList.m in Sources */,
+				841E3A98221D23BB008A6545 /* ListNode.m in Sources */,
 				841E3A6F221D219B008A6545 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841E3A9A221D23C2008A6545 /* SinglyLinkedListTests.m in Sources */,
 				841E3A87221D219F008A6545 /* algoDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +397,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WT237WBUX8;
-				INFOPLIST_FILE = algoDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/algoDemo/support files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +415,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WT237WBUX8;
-				INFOPLIST_FILE = algoDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/algoDemo/support files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
